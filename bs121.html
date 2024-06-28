@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Progress Bars with Emphasis Classes</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    /* Adding space at the bottom of progress bar */
+    .progress{
+        margin-bottom: 1rem;
+    }
+</style>
+</head>
+<body>
+<div class="m-4">
+    <div class="progress">
+        <div class="progress-bar bg-info" style="width: 20%"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width: 40%"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-warning" style="width: 80%"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-danger" style="width: 90%"></div>
+    </div>
+
+    <hr>
+
+    <div class="progress">
+        <div class="progress-bar bg-info" style="width: 20%">
+            Disk Space: 80% free
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width: 40%">
+            Enough Disk Space: 60% free
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-warning" style="width: 80%">
+            Low Disk Space: 80% full
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-danger" style="width: 90%">
+            Not Enough Disk Space: 90% full
+        </div>
+    </div>
+</div>
+</body>
+</html>
