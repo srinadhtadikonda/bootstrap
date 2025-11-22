@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Form</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    .card {
+      border-radius: 20px;
+    }
+
+    .form-icon {
+      font-size: 1.2rem;
+      width: 35px;
+      text-align: center;
+    }
+
+    fieldset legend {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  </style>
+
+</head>
+
+<body class="bg-light p-4">
+
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+
+        <div class="card shadow p-4">
+          <h3 class="text-center mb-4">
+            <i class="bi bi-person-badge me-2"></i> Registration Form
+          </h3>
+
+          <form>
+
+            <!-- First Name -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-person form-icon"></i> First Name</label>
+              <input type="text" name="fna" class="form-control form-control-lg" placeholder="Enter First Name" required>
+            </div>
+
+            <!-- Last Name -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-person-lines-fill form-icon"></i> Last Name</label>
+              <input type="text" name="lna" class="form-control form-control-lg" placeholder="Enter Last Name" required>
+            </div>
+
+            <!-- Courses -->
+            <fieldset class="border rounded p-3 mb-3">
+              <legend><i class="bi bi-journal-bookmark me-2"></i> Courses</legend>
+
+              <div class="form-check mb-1">
+                <input type="checkbox" class="form-check-input" id="dca" name="course" value="dca">
+                <label for="dca" class="form-check-label">DCA</label>
+              </div>
+
+              <div class="form-check mb-1">
+                <input type="checkbox" class="form-check-input" id="wdev" name="course" value="wdev">
+                <label for="wdev" class="form-check-label">Web Developer</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="wdes" name="course" value="wdes">
+                <label for="wdes" class="form-check-label">Web Designer</label>
+              </div>
+            </fieldset>
+
+            <!-- Fees -->
+            <fieldset class="border rounded p-3 mb-3">
+              <legend><i class="bi bi-cash-stack me-2"></i> Fees</legend>
+
+              <div class="form-check mb-1">
+                <input type="radio" class="form-check-input" id="cash" name="fees" value="cash" checked>
+                <label for="cash" class="form-check-label">Cash</label>
+              </div>
+
+              <div class="form-check mb-1">
+                <input type="radio" class="form-check-input" id="cheque" name="fees" value="cheque">
+                <label for="cheque" class="form-check-label">Cheque</label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="dd" name="fees" value="dd">
+                <label for="dd" class="form-check-label">DD</label>
+              </div>
+            </fieldset>
+
+            <!-- Place -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-geo-alt form-icon"></i> Place</label>
+              <select name="apl" class="form-select form-select-lg">
+                <option value="ongole">Ongole</option>
+                <option value="nellore">Nellore</option>
+                <option value="guntur">Guntur</option>
+                <option value="tirupathi">Tirupathi</option>
+                <option value="gudur">Gudur</option>
+                <option value="vijayawada">Vijayawada</option>
+              </select>
+            </div>
+
+            <!-- Qualification -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-mortarboard form-icon"></i> Basic Qualification</label>
+              <select name="bq" class="form-select" multiple>
+                <option value="ssc">SSC</option>
+                <option value="inter">Inter</option>
+                <option value="degree">Degree</option>
+                <option value="pg">PG</option>
+                <option value="diploma">Diploma</option>
+              </select>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-map form-icon"></i> Address</label>
+              <textarea name="adr" class="form-control" rows="3" placeholder="Enter Address"></textarea>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex gap-3 mt-4">
+              <button type="submit" class="btn btn-primary w-50 btn-lg">
+                <i class="bi bi-check-circle me-2"></i> Submit
+              </button>
+
+              <button type="reset" class="btn btn-secondary w-50 btn-lg">
+                <i class="bi bi-arrow-counterclockwise me-2"></i> Reset
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
