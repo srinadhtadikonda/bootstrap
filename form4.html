@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Form</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #000000, #1b1b1b, #202020);
+      height: 100vh;
+      padding: 40px;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      padding: 35px;
+    }
+
+    .glass-card h3 {
+      color: #fff;
+      text-shadow: 0px 0px 10px #0ff;
+    }
+
+    input,
+    select,
+    textarea {
+      background: rgba(255, 255, 255, 0.07) !important;
+      border: 1px solid rgba(255, 255, 255, 0.25) !important;
+      color: white !important;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      box-shadow: 0 0 8px #00eaff !important;
+      border-color: #00eaff !important;
+    }
+
+    .form-label i {
+      margin-right: 8px;
+      color: #00eaff;
+    }
+
+    fieldset {
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    legend {
+      padding: 0 7px;
+      font-size: 15px;
+      color: #00eaff;
+    }
+
+    .btn-primary {
+      background: #00eaff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: #00bcd4;
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+
+        <div class="glass-card mt-4">
+          <h3 class="text-center mb-4">
+            <i class="bi bi-stars"></i> Glassmorphism Form
+          </h3>
+
+          <form>
+
+            <!-- First Name -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-person"></i>First Name</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Enter First Name">
+            </div>
+
+            <!-- Last Name -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-person-lines-fill"></i>Last Name</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Enter Last Name">
+            </div>
+
+            <!-- Course -->
+            <fieldset class="mb-3">
+              <legend><i class="bi bi-journal-bookmark"></i> Courses</legend>
+
+              <div class="form-check mb-1">
+                <input type="checkbox" class="form-check-input" id="dca">
+                <label class="form-check-label" for="dca">DCA</label>
+              </div>
+
+              <div class="form-check mb-1">
+                <input type="checkbox" class="form-check-input" id="wdev">
+                <label class="form-check-label" for="wdev">Web Developer</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="wdes">
+                <label class="form-check-label" for="wdes">Web Designer</label>
+              </div>
+            </fieldset>
+
+            <!-- Fees -->
+            <fieldset class="mb-3">
+              <legend><i class="bi bi-cash-stack"></i> Fees</legend>
+
+              <div class="form-check mb-1">
+                <input type="radio" class="form-check-input" name="fees" id="cash" checked>
+                <label class="form-check-label" for="cash">Cash</label>
+              </div>
+
+              <div class="form-check mb-1">
+                <input type="radio" class="form-check-input" name="fees" id="cheque">
+                <label class="form-check-label" for="cheque">Cheque</label>
+              </div>
+
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="fees" id="dd">
+                <label class="form-check-label" for="dd">DD</label>
+              </div>
+            </fieldset>
+
+            <!-- Place -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-geo-alt"></i>Place</label>
+              <select class="form-select form-select-lg">
+                <option>Ongole</option>
+                <option>Nellore</option>
+                <option>Guntur</option>
+                <option>Tirupathi</option>
+                <option>Gudur</option>
+                <option>Vijayawada</option>
+              </select>
+            </div>
+
+            <!-- Qualification -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-mortarboard"></i>Basic Qualification</label>
+              <select class="form-select" multiple>
+                <option>SSC</option>
+                <option>Inter</option>
+                <option>Degree</option>
+                <option>PG</option>
+                <option>Diploma</option>
+              </select>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3">
+              <label class="form-label"><i class="bi bi-map"></i>Address</label>
+              <textarea class="form-control" rows="3" placeholder="Enter Address"></textarea>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex gap-3 mt-4">
+              <button type="submit" class="btn btn-primary w-50 btn-lg">
+                <i class="bi bi-check-circle"></i> Submit
+              </button>
+
+              <button type="reset" class="btn btn-secondary w-50 btn-lg">
+                <i class="bi bi-arrow-counterclockwise"></i> Reset
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
