@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Form</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light p-4">
+
+  <div class="container">
+    <div class="card shadow-lg p-4 rounded-4">
+      <h3 class="text-center mb-4">Demo Form</h3>
+
+      <form>
+
+        <!-- First Name -->
+        <div class="mb-3">
+          <label for="fna" class="form-label">First Name</label>
+          <input type="text" id="fna" name="fna" class="form-control" placeholder="First Name" required autofocus>
+        </div>
+
+        <!-- Last Name -->
+        <div class="mb-3">
+          <label for="lna" class="form-label">Last Name</label>
+          <input type="text" id="lna" name="lna" class="form-control" placeholder="Last Name" required>
+        </div>
+
+        <!-- Course -->
+        <fieldset class="border rounded p-3 mb-3">
+          <legend class="float-none px-2 w-auto">Course</legend>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="dca" name="course" value="dca">
+            <label class="form-check-label" for="dca">DCA</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="wdev" name="course" value="wdev">
+            <label class="form-check-label" for="wdev">Web Developer</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="wdes" name="course" value="wdes">
+            <label class="form-check-label" for="wdes">Web Designer</label>
+          </div>
+
+        </fieldset>
+
+        <!-- Fees -->
+        <fieldset class="border rounded p-3 mb-3">
+          <legend class="float-none px-2 w-auto">Fee</legend>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="cash" name="fees" value="cash" checked>
+            <label class="form-check-label" for="cash">Cash</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="cheque" name="fees" value="cheque">
+            <label class="form-check-label" for="cheque">Cheque</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="dd" name="fees" value="dd">
+            <label class="form-check-label" for="dd">DD</label>
+          </div>
+        </fieldset>
+
+        <!-- Place -->
+        <div class="mb-3">
+          <label for="apl" class="form-label">Place</label>
+          <select id="apl" name="apl" class="form-select">
+            <option value="ongole">Ongole</option>
+            <option value="nellore">Nellore</option>
+            <option value="guntur">Guntur</option>
+            <option value="tirupathi">Tirupathi</option>
+            <option value="gudur">Gudur</option>
+            <option value="vijayawada">Vijayawada</option>
+          </select>
+        </div>
+
+        <!-- Basic Qualification -->
+        <div class="mb-3">
+          <label for="bq" class="form-label">Basic Qualification</label>
+          <select id="bq" name="bq" class="form-select" multiple>
+            <option value="ssc">SSC</option>
+            <option value="inter">Inter</option>
+            <option value="degree">Degree</option>
+            <option value="pg">PG</option>
+            <option value="diploma">Diploma</option>
+          </select>
+        </div>
+
+        <!-- Address -->
+        <div class="mb-3">
+          <label for="adr" class="form-label">Address</label>
+          <textarea id="adr" name="adr" class="form-control" rows="3"></textarea>
+        </div>
+
+        <!-- Buttons -->
+        <div class="d-flex gap-3">
+          <button type="submit" class="btn btn-primary w-50">Submit</button>
+          <button type="reset" class="btn btn-secondary w-50">Reset</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
